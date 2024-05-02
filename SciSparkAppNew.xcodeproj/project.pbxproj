@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1E744AF2BE4290E00325967 /* SciSparkAppNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744AE2BE4290E00325967 /* SciSparkAppNewApp.swift */; };
+		B1E744B12BE4290E00325967 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744B02BE4290E00325967 /* ContentView.swift */; };
+		B1E744B32BE4291000325967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E744B22BE4291000325967 /* Assets.xcassets */; };
+		B1E744B62BE4291000325967 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E744B52BE4291000325967 /* Preview Assets.xcassets */; };
+		B1E744BD2BE42A9200325967 /* Videostrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744BC2BE42A9200325967 /* Videostrying.swift */; };
+		B1E744BF2BE42AD300325967 /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744BE2BE42AD300325967 /* VideosView.swift */; };
+		B1E744C12BE42AF700325967 /* QuestionWidget+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744C02BE42AF700325967 /* QuestionWidget+View.swift */; };
+		B1E744C32BE42B0D00325967 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744C22BE42B0D00325967 /* Colors.swift */; };
+		B1E744C52BE42C2B00325967 /* train.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1E744C42BE42C2B00325967 /* train.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1E744AB2BE4290E00325967 /* SciSparkAppNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciSparkAppNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E744AE2BE4290E00325967 /* SciSparkAppNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciSparkAppNewApp.swift; sourceTree = "<group>"; };
+		B1E744B02BE4290E00325967 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1E744B22BE4291000325967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1E744B52BE4291000325967 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1E744BC2BE42A9200325967 /* Videostrying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videostrying.swift; sourceTree = "<group>"; };
+		B1E744BE2BE42AD300325967 /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
+		B1E744C02BE42AF700325967 /* QuestionWidget+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionWidget+View.swift"; sourceTree = "<group>"; };
+		B1E744C22BE42B0D00325967 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B1E744C42BE42C2B00325967 /* train.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = train.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1E744A82BE4290E00325967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1E744A22BE4290E00325967 = {
+			isa = PBXGroup;
+			children = (
+				B1E744AD2BE4290E00325967 /* SciSparkAppNew */,
+				B1E744AC2BE4290E00325967 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1E744AC2BE4290E00325967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1E744AB2BE4290E00325967 /* SciSparkAppNew.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1E744AD2BE4290E00325967 /* SciSparkAppNew */ = {
+			isa = PBXGroup;
+			children = (
+				B1E744AE2BE4290E00325967 /* SciSparkAppNewApp.swift */,
+				B1E744B02BE4290E00325967 /* ContentView.swift */,
+				B1E744BC2BE42A9200325967 /* Videostrying.swift */,
+				B1E744C02BE42AF700325967 /* QuestionWidget+View.swift */,
+				B1E744C22BE42B0D00325967 /* Colors.swift */,
+				B1E744BE2BE42AD300325967 /* VideosView.swift */,
+				B1E744C42BE42C2B00325967 /* train.mp4 */,
+				B1E744B22BE4291000325967 /* Assets.xcassets */,
+				B1E744B42BE4291000325967 /* Preview Content */,
+			);
+			path = SciSparkAppNew;
+			sourceTree = "<group>";
+		};
+		B1E744B42BE4291000325967 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1E744B52BE4291000325967 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1E744AA2BE4290E00325967 /* SciSparkAppNew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E744B92BE4291000325967 /* Build configuration list for PBXNativeTarget "SciSparkAppNew" */;
+			buildPhases = (
+				B1E744A72BE4290E00325967 /* Sources */,
+				B1E744A82BE4290E00325967 /* Frameworks */,
+				B1E744A92BE4290E00325967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SciSparkAppNew;
+			productName = SciSparkAppNew;
+			productReference = B1E744AB2BE4290E00325967 /* SciSparkAppNew.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1E744A32BE4290E00325967 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B1E744AA2BE4290E00325967 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = B1E744A62BE4290E00325967 /* Build configuration list for PBXProject "SciSparkAppNew" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1E744A22BE4290E00325967;
+			productRefGroup = B1E744AC2BE4290E00325967 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1E744AA2BE4290E00325967 /* SciSparkAppNew */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1E744A92BE4290E00325967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E744B62BE4291000325967 /* Preview Assets.xcassets in Resources */,
+				B1E744B32BE4291000325967 /* Assets.xcassets in Resources */,
+				B1E744C52BE42C2B00325967 /* train.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1E744A72BE4290E00325967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E744BF2BE42AD300325967 /* VideosView.swift in Sources */,
+				B1E744C32BE42B0D00325967 /* Colors.swift in Sources */,
+				B1E744C12BE42AF700325967 /* QuestionWidget+View.swift in Sources */,
+				B1E744BD2BE42A9200325967 /* Videostrying.swift in Sources */,
+				B1E744B12BE4290E00325967 /* ContentView.swift in Sources */,
+				B1E744AF2BE4290E00325967 /* SciSparkAppNewApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B1E744B72BE4291000325967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1E744B82BE4291000325967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1E744BA2BE4291000325967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SciSparkAppNew/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammen.SciSparkAppNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1E744BB2BE4291000325967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SciSparkAppNew/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammen.SciSparkAppNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1E744A62BE4290E00325967 /* Build configuration list for PBXProject "SciSparkAppNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E744B72BE4291000325967 /* Debug */,
+				B1E744B82BE4291000325967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E744B92BE4291000325967 /* Build configuration list for PBXNativeTarget "SciSparkAppNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E744BA2BE4291000325967 /* Debug */,
+				B1E744BB2BE4291000325967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1E744A32BE4290E00325967 /* Project object */;
+}

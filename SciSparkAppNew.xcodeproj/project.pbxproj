@@ -16,6 +16,10 @@
 		B1E744C12BE42AF700325967 /* QuestionWidget+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744C02BE42AF700325967 /* QuestionWidget+View.swift */; };
 		B1E744C32BE42B0D00325967 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744C22BE42B0D00325967 /* Colors.swift */; };
 		B1E744C52BE42C2B00325967 /* train.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1E744C42BE42C2B00325967 /* train.mp4 */; };
+		B1E744C72BE42F9600325967 /* SingularCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744C62BE42F9600325967 /* SingularCategories.swift */; };
+		B1E744C92BE42FB700325967 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744C82BE42FB700325967 /* CategoriesView.swift */; };
+		B1E744CB2BE42FE600325967 /* LoadingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744CA2BE42FE600325967 /* LoadingPage.swift */; };
+		B1E744CD2BE43C3E00325967 /* FinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744CC2BE43C3E00325967 /* FinishedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		B1E744C02BE42AF700325967 /* QuestionWidget+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionWidget+View.swift"; sourceTree = "<group>"; };
 		B1E744C22BE42B0D00325967 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B1E744C42BE42C2B00325967 /* train.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = train.mp4; sourceTree = "<group>"; };
+		B1E744C62BE42F9600325967 /* SingularCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingularCategories.swift; sourceTree = "<group>"; };
+		B1E744C82BE42FB700325967 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		B1E744CA2BE42FE600325967 /* LoadingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPage.swift; sourceTree = "<group>"; };
+		B1E744CC2BE43C3E00325967 /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +73,11 @@
 				B1E744B02BE4290E00325967 /* ContentView.swift */,
 				B1E744BC2BE42A9200325967 /* Videostrying.swift */,
 				B1E744C02BE42AF700325967 /* QuestionWidget+View.swift */,
+				B1E744C82BE42FB700325967 /* CategoriesView.swift */,
+				B1E744C62BE42F9600325967 /* SingularCategories.swift */,
+				B1E744CA2BE42FE600325967 /* LoadingPage.swift */,
 				B1E744C22BE42B0D00325967 /* Colors.swift */,
+				B1E744CC2BE43C3E00325967 /* FinishedView.swift */,
 				B1E744BE2BE42AD300325967 /* VideosView.swift */,
 				B1E744C42BE42C2B00325967 /* train.mp4 */,
 				B1E744B22BE4291000325967 /* Assets.xcassets */,
@@ -153,9 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E744CB2BE42FE600325967 /* LoadingPage.swift in Sources */,
 				B1E744BF2BE42AD300325967 /* VideosView.swift in Sources */,
+				B1E744C72BE42F9600325967 /* SingularCategories.swift in Sources */,
 				B1E744C32BE42B0D00325967 /* Colors.swift in Sources */,
 				B1E744C12BE42AF700325967 /* QuestionWidget+View.swift in Sources */,
+				B1E744C92BE42FB700325967 /* CategoriesView.swift in Sources */,
+				B1E744CD2BE43C3E00325967 /* FinishedView.swift in Sources */,
 				B1E744BD2BE42A9200325967 /* Videostrying.swift in Sources */,
 				B1E744B12BE4290E00325967 /* ContentView.swift in Sources */,
 				B1E744AF2BE4290E00325967 /* SciSparkAppNewApp.swift in Sources */,

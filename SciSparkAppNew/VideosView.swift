@@ -4,13 +4,12 @@
 //
 //  Created by Sruthy Mammen on 5/2/24.
 //
-
-import Foundation
 import SwiftUI
 
 struct VideosView: View {
     // State variable to track the current question index
     @State private var currentQuestionIndex = 0
+    
     let questions: [Question] = [
         Question(
             text: "What is the primary analogy used to explain cells in the video?",
@@ -18,19 +17,14 @@ struct VideosView: View {
             correctAnswerIndex: 2 // Index of the correct answer
         ),
         Question(
-            text: "Which of the following statements about cells is NOT true?",
-            options: ["A) Cells are the building blocks of life.", "B) All living organisms are made up of cells.", "C) Cells can only be multicellular.", "D) Cells make new cells through division."],
-            correctAnswerIndex: 2 // Index of the correct answer
-        ),
-        Question(
             text: "What is a blastocyst?",
-            options: ["A) A type of plant cell", "B) A single-celled organism", "C) A group of cells surrounded by an outer shell", "D) A mature animal cell"],
+            options: ["A) A type of plant cell", "B) A single-celled organism", "C) Cells surrounded by an outer shell", "D) A mature animal cell"],
             correctAnswerIndex: 2 // Index of the correct answer
         ),
         Question(
             text: "What is the function of the cytoplasm in a cell?",
-            options: ["A) Control the cell", "B) Produce energy", "C) Give the cell its shape and hold everything in place", "D) Surround the nucleus"],
-            correctAnswerIndex: 2 // Index of the correct answer
+            options: ["A) Produce energy", "B) Control the cell", "C) Give the cell its shape", "D) Surround the nucleus"],
+            correctAnswerIndex: 3 // Index of the correct answer
         ),
         Question(
             text: "Which organelle is described as the 'brain' of the cell?",
@@ -39,7 +33,7 @@ struct VideosView: View {
         ),
         Question(
             text: "What is the primary function of the cell membrane?",
-            options: ["A) Synthesizing proteins", "B) Controlling the movement of substances in and out of the cell", "C) Providing mechanical support", "D) Producing energy"],
+            options: ["A) Synthesizing proteins", "B) Controlling the substances", "C) Providing mechanical support", "D) Producing energy"],
             correctAnswerIndex: 1 // Index of the correct answer
         ),
         Question(
@@ -63,52 +57,77 @@ struct VideosView: View {
             correctAnswerIndex: 1 // Index of the correct answer
         )
     ]
+    
     // State variable to track whether the answer is correct
     @State private var isAnswerCorrect = false
+    @State private var quizFinished = false
+    @State private var showFinishedView = false
+
     
     var body: some View {
-        ZStack {
-            Color.darkGray
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Text("Cellular Adventures: Exploring Structure and Function")
-                    .font(.system(size: 20))
-                    .bold()
-                    .foregroundColor(.white)
+        NavigationView {
+            ZStack {
+                Color.darkGray
+                    .edgesIgnoringSafeArea(.all)
                 
-                Videotrying()
-                
-                QuestionWidget(question: questions[currentQuestionIndex], isAnswerCorrect: $isAnswerCorrect)
-                
-                Spacer()
-                
-                Button(action: {
-                    // Reset isAnswerCorrect state
-                    isAnswerCorrect = false
-                    
-                    // Move to the next question
-                    if currentQuestionIndex < questions.count - 1 {
-                        currentQuestionIndex += 1
-                    }
-                }) {
-                    Text("Next Question")
-                        .font(.headline)
-                        .padding()
+                VStack {
+                    Text("Cellular Adventures: Exploring Structure and Function")
+                        .font(.system(size: 25))
+                        .bold()
                         .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(8)
+                    
+                    Videotrying()
+                    
+                    QuestionWidget(question: questions[currentQuestionIndex], isAnswerCorrect: $isAnswerCorrect)
+                    
+                    Spacer()
+                    
+                    if currentQuestionIndex < questions.count - 1 {
+                        Button(action: {
+                            // Reset isAnswerCorrect state
+                            isAnswerCorrect = false
+                            
+                            // Move to the next question
+                            if currentQuestionIndex < questions.count - 1 {
+                                currentQuestionIndex += 1
+                            }
+                        }) {
+                            Text("Next Question")
+                                .font(.headline)
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(Color.blue)
+                                .cornerRadius(8)
+                        }
+                    } else {
+                        Button(action: {
+                            showFinishedView = true
+                        }) {
+                            Text("Show Finished View")
+                                .font(.headline)
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(Color.blue)
+                                .cornerRadius(8)
+                        }
+                    }
+                }
+                .padding()
+                
+                // Present the FinishedView if showFinishedView is true
+                if showFinishedView {
+                    FinishedView(isPresented: $showFinishedView)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color.white.opacity(0.7))
+                        .edgesIgnoringSafeArea(.all)
                 }
             }
-            .padding()
         }
     }
 }
 
-
-struct VideoView_Previews: PreviewProvider {
-        static var previews: some View {
-            VideosView()
-      
-        }
+struct VideosView_Previews: PreviewProvider {
+    static var previews: some View {
+        VideosView()
     }
+}

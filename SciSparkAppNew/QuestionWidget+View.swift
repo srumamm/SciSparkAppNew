@@ -38,7 +38,7 @@ struct QuestionWidget: View {
         ),
         Question(
             text: "What is the function of the cytoplasm in a cell?",
-            options: ["A) Produce energy A) Control the cell", "B) Control the cell", "C) Give the cell its shape and hold everything in place", "D) Surround the nucleus"],
+            options: ["A) Produce energy A) Control the cell", "B) Control the cell", "C) Give the cell its shape", "D) Surround the nucleus"],
             correctAnswerIndex: 1 // Index of the correct answer
         ),
         Question(
@@ -73,36 +73,64 @@ struct QuestionWidget: View {
         )
     ]
     
-    var body: some View {
-        ZStack {
-            Color.offWhite // Set background color to white
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack(alignment: .leading, spacing: 20) {
-                Text(question.text)
-                    .font(.system(size: 18))
-                    .foregroundColor(.black) // Change text color to black for better visibility on white background
-                    .padding()
-                    .background(Color.white) // Set background color to white
-                    .cornerRadius(12) // Add horizontal padding to title
-                
-                ForEach(0..<question.options.count, id: \.self) { index in
-                    Button(action: {
-                        // Check if the selected answer is correct
-                        isAnswerCorrect = index == question.correctAnswerIndex
-                    }) {
-                        Text(question.options[index])
-                            .padding()
-                            .foregroundColor(.white)
-                            .background(isAnswerCorrect && index == question.correctAnswerIndex ? Color.green : Color.blue)
-                            .cornerRadius(8)
-                    }
-                    .padding(.horizontal) // Add horizontal padding to buttons
-                }
-                
-                Spacer() // Add spacer to push content to the top
-            }
-        }
-        .cornerRadius(20) // Add horizontal padding to title
-    }
-}
+    let maxFontSize: CGFloat = 20 // Maximum font size
+       
+       var body: some View {
+           ZStack {
+               Color.offWhite // Set background color to white
+                   .edgesIgnoringSafeArea(.all)
+               
+               VStack(alignment: .leading, spacing: 20) {
+                   Text(question.text)
+                       .font(.system(size: fontSizeForQuestion(question.text)))
+                       .foregroundColor(.black)
+                       .padding()
+                       .cornerRadius(12)
+                       .fixedSize(horizontal: false, vertical: true) // Allow multiline text
+                   
+                   ForEach(0..<question.options.count, id: \.self) { index in
+                       Button(action: {
+                           // Check if the selected answer is correct
+                           isAnswerCorrect = index == question.correctAnswerIndex
+                       }) {
+                           Text(question.options[index])
+                               .font(.system(size: fontSizeForOption(question.options[index])))
+                               .padding()
+                               .foregroundColor(.white)
+                               .background(isAnswerCorrect && index == question.correctAnswerIndex ? Color.green : Color.blue)
+                               .cornerRadius(8)
+                               .fixedSize(horizontal: false, vertical: true) // Allow multiline text for options
+                       }
+                       .padding(.horizontal) // Add horizontal padding to buttons
+                   }
+                   
+                   Spacer() // Add spacer to push content to the top
+               }
+           }
+           .cornerRadius(20) // Add horizontal padding to title
+       }
+       
+       // Function to calculate font size dynamically based on the length of the question text
+       private func fontSizeForQuestion(_ questionText: String) -> CGFloat {
+           let questionLength = questionText.count
+           let maxLengthForFontSize = 60 // Adjust this value as needed
+           
+           if questionLength > maxLengthForFontSize {
+               return maxFontSize - CGFloat(questionLength - maxLengthForFontSize)
+           } else {
+               return maxFontSize
+           }
+       }
+       
+       // Function to calculate font size dynamically based on the length of the option text
+       private func fontSizeForOption(_ optionText: String) -> CGFloat {
+           let optionLength = optionText.count
+           let maxLengthForFontSize = 40 // Adjust this value as needed
+           
+           if optionLength > maxLengthForFontSize {
+               return maxFontSize - CGFloat(optionLength - maxLengthForFontSize)
+           } else {
+               return maxFontSize
+           }
+       }
+   }

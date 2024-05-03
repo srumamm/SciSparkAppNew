@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-
 struct FinishedView: View {
+    
     @Binding var isPresented: Bool
     
     var body: some View {
@@ -17,28 +17,41 @@ struct FinishedView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Text("Congratulations! You have finished the quiz.")
-                    .font(.title)
+                Text("Congratulations!")
+                    .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .padding()
+                    .padding(.top, 50)
+                
+                Text("You've Finished the Quiz!")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 50)
+                
+                Image("cutey")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 300, height: 300)
                 
                 Button(action: {
 
-                    let categoriesView = CategoriesView()
-                    UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: categoriesView)
-                    UIApplication.shared.windows.first?.makeKeyAndVisible()
-                }) {
-                    Text("Go back to lessons")
+                                   let categoriesView = CategoriesView()
+                                   UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: categoriesView)
+                                   UIApplication.shared.windows.first?.makeKeyAndVisible()
+                               }) {
+                    Text("Back to Lessons")
                         .font(.headline)
-                        .padding()
                         .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(8)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blackGray)
+                        .cornerRadius(10)
                 }
+                .padding()
             }
-            .navigationBarHidden(true)
         }
     }
 }

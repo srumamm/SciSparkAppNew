@@ -47,7 +47,7 @@ struct CommunityForumView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color.blackGray)
+                    .background(Color.darkGray)
                     
                     // Category buttons
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -118,7 +118,7 @@ struct CommunityForumView: View {
                             .font(.title)
                             .foregroundColor(.white)
                             .padding(.leading, 30)
-                            .offset(y: -15)
+                            .offset(y: -20)
                     }
                     
                     Spacer()
@@ -127,31 +127,19 @@ struct CommunityForumView: View {
                     Button(action: {
                         goToCategoriesView()
                     }) {
-                        Image(systemName: "square.grid.2x2.fill")
+                        Image(systemName: "person.2")
                             .font(.title)
                             .foregroundColor(.white)
                             .padding(.leading, 30)
-                            .offset(x: 0, y: -15)
+                            .offset(x: 0, y: -20)
                     }
                     
-                    Spacer()
-                    
-                    // Button 3
-                    Button(action: {
-                        goToVideosView()
-                    }) {
-                        Image(systemName: "square.grid.2x2.fill")
-                            .font(.title)
-                            .foregroundColor(.white)
-                            .padding(.leading, 50)
-                            .offset(x: -30, y: -15)
-                    }
-                    
+                 
                     Spacer()
                 }
                 .padding(.top, 30)
 
-                .background(Color.black)
+                .background(Color.darkGray)
                 .padding(.top, 30)
                 .offset(y: 380)
             }

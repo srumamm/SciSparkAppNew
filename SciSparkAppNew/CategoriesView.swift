@@ -15,30 +15,34 @@ struct CategoriesView: View {
     
     var body: some View {
         ZStack {
-            Color.darkGray
+            Color.offWhite
                 .edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 20) {
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("Hello")
+                        Text("Hello,")
                             .font(.title)
+                            .bold()
+                            .foregroundColor(Color.blackGray)
                             .foregroundColor(.white)
-                        Text("Welcome to SciSpark.")
+                        Text("Welcome to SciSpark!")
                             .font(.title)
+                            .bold()
                             .foregroundColor(.white)
                     }
-                    .padding(.top,40)
+                    .padding(.top,20)
                     
                     Spacer()
                 }
                 .padding()
-                .background(Color.gray)
+                .background(Color.darkGray)
                 
                 Text("Categories")
                     .font(.title)
-                    .foregroundColor(.white)
+                    .bold()
                     .padding(.trailing)
+                    .foregroundColor(Color.blackGray)
                 
                 
                 VStack(spacing: 16) {
@@ -100,7 +104,7 @@ struct CategoriesView: View {
                                     Button(action: {
                                         goToCategoriesView()
                                     }) {
-                                        Image(systemName: "square.grid.2x2.fill")
+                                        Image(systemName: "person.2")
                                             .font(.title)
                                             .foregroundColor(.white)
                                             .padding(.leading,30)
@@ -108,24 +112,12 @@ struct CategoriesView: View {
 
                                     }
                                     
-                                    Spacer()
                                     
-                                    // Button 3
-                                    Button(action: {
-                                        gotoArticleView()
-                                    }) {
-                                        Image(systemName: "square.grid.2x2.fill")
-                                            .font(.title)
-                                            .foregroundColor(.white)
-                                            .padding(.leading,50)
-                                            .offset(x:-30,y:10)
-
-                                    }
                                     
                                     Spacer()
                                 }
-                                .background(Color.black)
-                                .padding(.top,20)
+                                .background(Color.darkGray)
+                                .padding(.top,30)
                                 .offset(y:-40)
 
             }

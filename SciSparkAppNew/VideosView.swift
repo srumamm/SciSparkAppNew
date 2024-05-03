@@ -71,7 +71,7 @@ struct VideosView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Text("Cell Adventures: Structure and Function Findings")
+                    Text("Cellular Adventures: Exploring Structure and Function")
                         .font(.system(size: 25))
                         .bold()
                         .foregroundColor(.white)

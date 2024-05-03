@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1D4BFFC2BE468CB00CF893B /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4BFFB2BE468CB00CF893B /* Lessons.swift */; };
+		B1D4BFFE2BE499CF00CF893B /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4BFFD2BE499CF00CF893B /* CommunityView.swift */; };
+		B1D4C0002BE4BFDC00CF893B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4BFFF2BE4BFDC00CF893B /* ProfileView.swift */; };
 		B1E744AF2BE4290E00325967 /* SciSparkAppNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744AE2BE4290E00325967 /* SciSparkAppNewApp.swift */; };
 		B1E744B12BE4290E00325967 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E744B02BE4290E00325967 /* ContentView.swift */; };
 		B1E744B32BE4291000325967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E744B22BE4291000325967 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1D4BFFB2BE468CB00CF893B /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
+		B1D4BFFD2BE499CF00CF893B /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		B1D4BFFF2BE4BFDC00CF893B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B1E744AB2BE4290E00325967 /* SciSparkAppNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciSparkAppNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E744AE2BE4290E00325967 /* SciSparkAppNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciSparkAppNewApp.swift; sourceTree = "<group>"; };
 		B1E744B02BE4290E00325967 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +84,9 @@
 				B1E744CA2BE42FE600325967 /* LoadingPage.swift */,
 				B1E744C22BE42B0D00325967 /* Colors.swift */,
 				B1E744CC2BE43C3E00325967 /* FinishedView.swift */,
+				B1D4BFFD2BE499CF00CF893B /* CommunityView.swift */,
+				B1D4BFFB2BE468CB00CF893B /* Lessons.swift */,
+				B1D4BFFF2BE4BFDC00CF893B /* ProfileView.swift */,
 				B1E744BE2BE42AD300325967 /* VideosView.swift */,
 				B1E744C42BE42C2B00325967 /* train.mp4 */,
 				B1E744B22BE4291000325967 /* Assets.xcassets */,
@@ -166,9 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E744CB2BE42FE600325967 /* LoadingPage.swift in Sources */,
+				B1D4C0002BE4BFDC00CF893B /* ProfileView.swift in Sources */,
 				B1E744BF2BE42AD300325967 /* VideosView.swift in Sources */,
+				B1D4BFFE2BE499CF00CF893B /* CommunityView.swift in Sources */,
 				B1E744C72BE42F9600325967 /* SingularCategories.swift in Sources */,
 				B1E744C32BE42B0D00325967 /* Colors.swift in Sources */,
+				B1D4BFFC2BE468CB00CF893B /* Lessons.swift in Sources */,
 				B1E744C12BE42AF700325967 /* QuestionWidget+View.swift in Sources */,
 				B1E744C92BE42FB700325967 /* CategoriesView.swift in Sources */,
 				B1E744CD2BE43C3E00325967 /* FinishedView.swift in Sources */,

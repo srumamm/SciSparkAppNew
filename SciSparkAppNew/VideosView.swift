@@ -71,7 +71,7 @@ struct VideosView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Text("Cellular Adventures: Exploring Structure and Function")
+                    Text("Cell Adventures: Structure and Function Findings")
                         .font(.system(size: 25))
                         .bold()
                         .foregroundColor(.white)
@@ -113,8 +113,6 @@ struct VideosView: View {
                     }
                 }
                 .padding()
-                
-                // Present the FinishedView if showFinishedView is true
                 if showFinishedView {
                     FinishedView(isPresented: $showFinishedView)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)

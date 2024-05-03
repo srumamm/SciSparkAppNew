@@ -9,57 +9,51 @@ import SwiftUI
 
 struct LoadingPage: View {
     @State private var isLoadingComplete = false
+    @State private var navigateToCategories = false
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color.darkGray
-                    .edgesIgnoringSafeArea(.all)
-                
-                VStack(spacing: 16) {
-                    Spacer()
-                    
-                    Text("SciSpark.")
-                        .font(.system(size: 50, weight: .bold, design: .serif))
-                        .foregroundColor(.white)
-                    
-                    Text("Empower Curiosity, Spark Knowledge:")
-                        .font(.system(size: 18))
-                        .foregroundColor(.white)
-                    
-                    Text("SciSpark,")
-                        .font(.system(size: 18))
-                        .foregroundColor(.white)
-                    
-                    Text("Where Science Thrives.")
-                        .font(.system(size: 18))
-                        .foregroundColor(.white)
-                    
-                    Spacer()
-                    
-                    Image(systemName: "atom")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 200)
-                        .foregroundColor(.white)
-                }
-            }
-            .onAppear {
-                // Simulate loading time with DispatchQueue
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                    isLoadingComplete = true
-                }
-            }
-            .navigationTitle("") // Hide navigation title
-            .navigationBarHidden(true) // Hide navigation bar
+        ZStack {
+            Color.darkGray
+                .edgesIgnoringSafeArea(.all)
             
-            NavigationLink(destination: CategoriesView(), isActive: $isLoadingComplete) {
-                EmptyView()
+            VStack(spacing: 16) {
+                Spacer()
+                
+                Text("SciSpark.")
+                    .font(.system(size: 50, weight: .bold, design: .serif))
+                    .foregroundColor(.white)
+                
+                Text("Empower Curiosity, Spark Knowledge:")
+                    .font(.system(size: 18))
+                    .foregroundColor(.white)
+                
+                Text("SciSpark,")
+                    .font(.system(size: 18))
+                    .foregroundColor(.white)
+                
+                Text("Where Science Thrives.")
+                    .font(.system(size: 18))
+                    .foregroundColor(.white)
+                
+                Spacer()
+                
+                Image(systemName: "atom")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 200)
+                    .foregroundColor(.white)
             }
-            .hidden()
-            .navigationTitle("") // Hide navigation title
-            .navigationBarHidden(true)
         }
+        .onAppear {
+            // Simulate loading time with DispatchQueue
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                isLoadingComplete = true
+                navigateToCategories = true
+            }
+        }
+        .fullScreenCover(isPresented: $navigateToCategories, content: {
+            CategoriesView()
+        })
     }
 }
 
